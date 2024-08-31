@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200..1000&family=Oswald:wght@200..700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	body {
+		@apply text-white tracking-wider bg-[#050c6e] dark:bg-darkColor;
+	}
+	section {
+		@apply pt-16 pb-4 md:pt-20;
+	}
+}
+
+@layer components {
+	.btn {
+		@apply capitalize py-3 px-6 rounded-lg text-center cursor-pointer  ease-linear duration-200 w-[10rem];
+		transition-property: opacity;
+	}
+	.btn-primary {
+		@apply text-black bg-yellow-500 hover:opacity-75;
+	}
+}
+
+@layer utilities {
+	.home_title,
+	.card_title,
+	.section_title {
+		@apply text-[2.5rem]  font-extrabold lg:text-[3.5rem];
+	}
+	.section_title {
+		@apply text-[1.4rem] lg:text-[2rem] xl:text-[3rem]  tracking-wider;
+	}
+	.card_title {
+		@apply text-start text-[2rem];
+	}
+	.separator {
+		@apply block h-[0.3rem] w-[12rem] bg-yellow-500;
+	}
+	.paragraph {
+		@apply text-gray-400;
+	}
+}
+.tabs_wrap ul li:hover,
+.tabs_wrap ul li.active {
+	@apply bg-yellow-500 text-black;
+}

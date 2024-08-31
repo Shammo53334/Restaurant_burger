@@ -1,0 +1,17 @@
+{
+  "name": "restaurant",
+  "version": "1.0.0",
+  "description": "This is a ecommerce website ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Shammo",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.7"
+  },
+  "dependencies": {
+    "aos": "^3.0.0-beta.6"
+  }
+}
